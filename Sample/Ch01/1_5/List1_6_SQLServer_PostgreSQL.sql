@@ -1,12 +1,39 @@
 --SQL Server PostgreSQL
--- DMLFƒf[ƒ^“o˜^
+-- DMLï¿½Fï¿½fï¿½[ï¿½^ï¿½oï¿½^
 BEGIN TRANSACTION;
-INSERT INTO Shohin VALUES ('0001', 'TƒVƒƒƒc', 'ˆß•', 1000, 500, '2009-09-20');
-INSERT INTO Shohin VALUES ('0002', 'ŒŠ‚ ‚¯ƒpƒ“ƒ`', '––±—p•i', 500, 320, '2009-09-11');
-INSERT INTO Shohin VALUES ('0003', 'ƒJƒbƒ^[ƒVƒƒƒc', 'ˆß•', 4000, 2800, NULL);
-INSERT INTO Shohin VALUES ('0004', '•ï’š', 'ƒLƒbƒ`ƒ“—p•i', 3000, 2800, '2009-09-20');
-INSERT INTO Shohin VALUES ('0005', 'ˆ³—Í“ç', 'ƒLƒbƒ`ƒ“—p•i', 6800, 5000, '2009-01-15');
-INSERT INTO Shohin VALUES ('0006', 'ƒtƒH[ƒN', 'ƒLƒbƒ`ƒ“—p•i', 500, NULL, '2009-09-20');
-INSERT INTO Shohin VALUES ('0007', '‚¨‚ë‚µ‚ª‚Ë', 'ƒLƒbƒ`ƒ“—p•i', 880, 790, '2008-04-28');
-INSERT INTO Shohin VALUES ('0008', 'ƒ{[ƒ‹ƒyƒ“', '––±—p•i', 100, NULL, '2009-11-11');
+INSERT INTO Shohin VALUES ('0001', 'Tï¿½Vï¿½ï¿½ï¿½c', 'ï¿½ß•ï¿½', 1000, 500, '2009-09-20');
+INSERT INTO Shohin VALUES ('0002', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½`', 'ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½i', 500, 320, '2009-09-11');
+INSERT INTO Shohin VALUES ('0003', 'ï¿½Jï¿½bï¿½^ï¿½[ï¿½Vï¿½ï¿½ï¿½c', 'ï¿½ß•ï¿½', 4000, 2800, NULL);
+INSERT INTO Shohin VALUES ('0004', 'ï¿½ï’š', 'ï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½pï¿½i', 3000, 2800, '2009-09-20');
+INSERT INTO Shohin VALUES ('0005', 'ï¿½ï¿½ï¿½Í“ï¿½', 'ï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½pï¿½i', 6800, 5000, '2009-01-15');
+INSERT INTO Shohin VALUES ('0006', 'ï¿½tï¿½Hï¿½[ï¿½N', 'ï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½pï¿½i', 500, NULL, '2009-09-20');
+INSERT INTO Shohin VALUES ('0007', 'ï¿½ï¿½ï¿½ë‚µï¿½ï¿½ï¿½ï¿½', 'ï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½pï¿½i', 880, 790, '2008-04-28');
+INSERT INTO Shohin VALUES ('0008', 'ï¿½{ï¿½[ï¿½ï¿½ï¿½yï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½i', 100, NULL, '2009-11-11');
+COMMIT;
+BEGIN TRANSACTION;
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0001', 'Tã‚·ãƒ£ãƒ„', 'è¡£æœ', 1000, 500, '2009-09-20');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0002', 'è…•æ™‚è¨ˆãƒ‘ãƒƒãƒ', 'é›‘è²¨å“', 500, 320, '2009-09-11');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0003', 'ã‚­ãƒ£ãƒ—ã‚¿ãƒ¼ã‚·ãƒ£ãƒ„', 'è¡£æœ', 4000, 2800, NULL);
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0004', 'ç´…èŒ¶', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 3000, 2800, '2009-09-20');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0005', 'æ–™ç†é‹', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 6800, 5000, '2009-01-15');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0006', 'ãƒ•ã‚©ãƒ¼ã‚¯', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 500, NULL, '2009-09-20');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0007', 'é£²ã¿ç‰©ã‚»ãƒƒãƒˆ', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 880, 790, '2008-04-28');
+
+INSERT INTO shohin (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
+VALUES ('0008', 'ãƒœãƒ¼ãƒ«ãƒšãƒ³', 'é›‘è²¨å“', 100, NULL, '2009-11-11');
+
 COMMIT;
