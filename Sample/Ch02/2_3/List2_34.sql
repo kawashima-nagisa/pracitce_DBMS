@@ -1,4 +1,12 @@
 SELECT shohin_mei, shiire_tanka
   FROM Shohin
- WHERE shohin_bunrui = 'ƒLƒbƒ`ƒ“—p•i'
+ WHERE shohin_bunrui = 'ï¿½Lï¿½bï¿½`ï¿½ï¿½ï¿½pï¿½i'
+    OR hanbai_tanka >= 3000;
+
+
+
+
+SELECT shohin_mei, shiire_tanka
+  FROM Shohin
+ WHERE shohin_bunrui = 'ã‚­ãƒƒãƒãƒ³ç”¨å“'
     OR hanbai_tanka >= 3000;
