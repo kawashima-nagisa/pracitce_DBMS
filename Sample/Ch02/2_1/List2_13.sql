@@ -1,3 +1,7 @@
--- ‚±‚ÌSELECT•¶‚ÍAŒ‹‰Ê‚©‚çd•¡‚ð‚È‚­‚µ‚Ü‚·B
+-- ï¿½ï¿½ï¿½ï¿½SELECTï¿½ï¿½ï¿½ÍAï¿½ï¿½ï¿½Ê‚ï¿½ï¿½ï¿½dï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B
+SELECT DISTINCT shohin_id, shiire_tanka
+  FROM Shohin;
+
+-- ã“ã‚Œã¯ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
 SELECT DISTINCT shohin_id, shiire_tanka
   FROM Shohin;
