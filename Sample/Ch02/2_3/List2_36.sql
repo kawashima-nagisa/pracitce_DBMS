@@ -5,6 +5,19 @@ SELECT shohin_mei, shohin_bunrui, torokubi
       OR torokubi = '2009-09-20');
 
 
+SELECT shohin_mei, shohin_bunrui, torokubi
+  FROM Shohin
+ WHERE shohin_bunrui = '雑貨品'
+   AND ( torokubi = '2009-09-11'
+      OR torokubi = '2009-09-20');
+
+
+
+SELECT shohin_mei, shohin_bunrui, torokubi
+  FROM Shohin
+ WHERE shohin_bunrui = '衣服'
+   AND ( torokubi = '2009-09-11'
+      OR torokubi = '2009-09-20');
 
 SELECT * 
 FROM Shohin
