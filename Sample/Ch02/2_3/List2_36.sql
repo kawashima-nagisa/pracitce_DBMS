@@ -46,3 +46,8 @@ WHERE shiire_tanka IS NULL;
 SELECT * 
 FROM Shohin
 WHERE shiire_tanka IS NOT NULL;
+
+
+SELECT * 
+FROM Shohin
+WHERE torokubi  IS NULL;
