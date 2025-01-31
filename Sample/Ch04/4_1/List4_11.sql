@@ -1,6 +1,7 @@
--- ¤•i•ª—Ş‚²‚Æ‚É‚Ü‚Æ‚ß‚½ƒe[ƒuƒ‹
+-- ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ş‚ï¿½ï¿½Æ‚É‚Ü‚Æ‚ß‚ï¿½ï¿½eï¿½[ï¿½uï¿½ï¿½
 CREATE TABLE ShohinBunrui
 (shohin_bunrui VARCHAR(32) NOT NULL,
  sum_hanbai_tanka INTEGER ,
  sum_shiire_tanka INTEGER ,
-     PRIMARY KEY (shohin_bunrui));
+PRIMARY KEY (shohin_bunrui)
+);

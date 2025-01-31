@@ -1,4 +1,4 @@
--- ƒf[ƒ^‘}“üæ‚Ì¤•iƒRƒs[ƒe[ƒuƒ‹
+-- ï¿½fï¿½[ï¿½^ï¿½}ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½iï¿½Rï¿½sï¿½[ï¿½eï¿½[ï¿½uï¿½ï¿½
 CREATE TABLE ShohinCopy
 (shohin_id CHAR(4) NOT NULL,
  shohin_mei VARCHAR(100) NOT NULL,
@@ -7,3 +7,14 @@ CREATE TABLE ShohinCopy
  shiire_tanka INTEGER ,
  torokubi DATE ,
      PRIMARY KEY (shohin_id));
+
+
+CREATE TABLE ShohinCopy
+(shohin_id CHAR(4) NOT NULL,
+ shohin_mei VARCHAR(100) NOT NULL,
+ shohin_bunrui VARCHAR(32) NOT NULL,
+ hanbai_tanka INTEGER ,
+ shiire_tanka INTEGER ,
+ torokubi DATE ,
+PRIMARY KEY (shohin_id)
+);

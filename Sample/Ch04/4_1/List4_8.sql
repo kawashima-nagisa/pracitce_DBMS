@@ -1,7 +1,8 @@
--- shiire_tanka—ñi§–ñ‚È‚µj‚ğÈ—ªFuNULLv‚É‚È‚é
+-- shiire_tankaï¿½ï¿½iï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½jï¿½ï¿½ï¿½È—ï¿½ï¿½Fï¿½uNULLï¿½vï¿½É‚È‚ï¿½
 INSERT INTO ShohinIns (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, torokubi) 
-       VALUES ('0008', 'ƒ{[ƒ‹ƒyƒ“', '––±—p•i', 100, '2009-11-11');
+       VALUES ('0008', 'ãƒœãƒ¼ãƒ«ãƒšãƒ³', 'äº‹å‹™ç”¨å“', 100, '2009-11-11');
 
--- shohin_mei—ñiNOT NULL§–ñj‚ğÈ—ªFƒGƒ‰[I
+-- shohin_meiï¿½ï¿½iNOT NULLï¿½ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½È—ï¿½ï¿½Fï¿½Gï¿½ï¿½ï¿½[ï¿½I
 INSERT INTO ShohinIns (shohin_id, shohin_bunrui, hanbai_tanka, shiire_tanka, torokubi) 
-       VALUES ('0009', '––±—p•i', 1000, 500, '2009-12-12');
+       VALUES ('0009', 'ãƒœãƒ¼ãƒ«ãƒšãƒ³', 1000, 500, '2009-12-12');
+-- ERROR:  null value in column "shohin_mei" of relation "shohinins" violates not-null constraint
