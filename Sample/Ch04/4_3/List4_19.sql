@@ -1,8 +1,8 @@
---—ñ‚ğƒJƒ“ƒ}‹æØ‚è‚Å•À‚×‚é
+--ï¿½ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½}ï¿½ï¿½Ø‚ï¿½Å•ï¿½ï¿½×‚ï¿½
 UPDATE Shohin
    SET hanbai_tanka = hanbai_tanka * 10,
        shiire_tanka = shiire_tanka / 2
- WHERE shohin_bunrui = 'ƒLƒbƒ`ƒ“—p•i';
+ WHERE shohin_bunrui = 'ã‚­ãƒƒãƒãƒ³ç”¨å“';
 
---•ÏX“à—e‚ÌŠm”F
+--ï¿½ÏXï¿½ï¿½ï¿½eï¿½ÌŠmï¿½F
 SELECT * FROM Shohin ORDER BY shohin_id;
