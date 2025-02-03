@@ -1,7 +1,27 @@
---SQL ServerÅADB2ÅAPostgreSQLÅAMySQL
+--SQL ServerÔøΩADB2ÔøΩAPostgreSQLÔøΩAMySQL
 SELECT shohin_bunrui, cnt_shohin
   FROM (SELECT *
           FROM (SELECT shohin_bunrui, COUNT(*) AS cnt_shohin
                   FROM Shohin
                  GROUP BY shohin_bunrui) AS ShohinSum
          WHERE cnt_shohin = 4) AS ShohinSum2;
+
+
+SELECT shohin_bunrui, cnt_shohin
+FROM (
+    SELECT shohin_bunrui, COUNT(*) AS cnt_shohin
+    FROM Shohin
+    GROUP BY shohin_bunrui
+) AS ShohinSum
+WHERE cnt_shohin = 4;
+
+
+-- AS „ÅÆÁúÅÁï•
+
+SELECT shohin_bunrui, cnt_shohin
+FROM (
+    SELECT shohin_bunrui, COUNT(*) cnt_shohin
+    FROM Shohin
+    GROUP BY shohin_bunrui
+) ShohinSum
+WHERE cnt_shohin = 4;
