@@ -1,7 +1,7 @@
-INSERT INTO ShohinJim VALUES ('0009', 'ˆóŠÓ', 'Ž––±—p•i', 95, 10, '2009-11-30');
+INSERT INTO ShohinJim VALUES ('0009', 'å°é‘‘', 'äº‹å‹™ç”¨å“', 95, 10, '2009-11-30');
 
---ƒrƒ…[‚É’Ç‰Á‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ÌŠm”F
+--ï¿½rï¿½ï¿½ï¿½[ï¿½É’Ç‰ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½é‚±ï¿½Æ‚ÌŠmï¿½F
 SELECT * FROM ShohinJim;
 
---Œ³‚Ìƒe[ƒuƒ‹‚É’Ç‰Á‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ÌŠm”F
+--ï¿½ï¿½ï¿½Ìƒeï¿½[ï¿½uï¿½ï¿½ï¿½É’Ç‰ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½é‚±ï¿½Æ‚ÌŠmï¿½F
 SELECT * FROM Shohin;

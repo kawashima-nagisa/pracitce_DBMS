@@ -2,4 +2,4 @@ CREATE VIEW ShohinJim (shohin_id, shohin_mei, shohin_bunrui, hanbai_tanka, shiir
 AS 
 SELECT *
   FROM Shohin
- WHERE shohin_bunrui = '––±—p•i';
+ WHERE shohin_bunrui = 'äº‹å‹™ç”¨å“';
