@@ -1,10 +1,10 @@
---SQL ServerAPostgreSQL
---DDLFƒe[ƒuƒ‹ì¬
+--SQL Serverï¿½APostgreSQL
+--DDLï¿½Fï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½ì¬
 CREATE TABLE SampleLike
 ( strcol VARCHAR(6) NOT NULL,
   PRIMARY KEY (strcol));
 
---DMLFƒf[ƒ^“o˜^
+--DMLï¿½Fï¿½fï¿½[ï¿½^ï¿½oï¿½^
 BEGIN TRANSACTION;
 
 INSERT INTO SampleLike (strcol) VALUES ('abcddd');
@@ -15,3 +15,14 @@ INSERT INTO SampleLike (strcol) VALUES ('ddabc');
 INSERT INTO SampleLike (strcol) VALUES ('abddc');
 
 COMMIT;
+/*
+
+ strcol 
+--------
+ abcddd
+ dddabc
+ abdddc
+ abcdd
+ ddabc
+ abddc
+(6 rows)
