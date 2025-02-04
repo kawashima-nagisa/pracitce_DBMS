@@ -1,27 +1,45 @@
---SQL ServerAPostgreSQL
---DDLFƒe[ƒuƒ‹ì¬
+--SQL Serverï¿½APostgreSQL
+--DDLï¿½Fï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½ì¬
 CREATE TABLE SampleStr
 (str1  VARCHAR(40),
  str2  VARCHAR(40),
  str3  VARCHAR(40));
 
---DMLFƒf[ƒ^“o˜^
+--DMLï¿½Fï¿½fï¿½[ï¿½^ï¿½oï¿½^
 BEGIN TRANSACTION;
 
-INSERT INTO SampleStr (str1, str2, str3) VALUES ('‚ ‚¢‚¤',	'‚¦‚¨'	,	NULL);
+INSERT INTO SampleStr (str1, str2, str3) VALUES ('ã‚ã„ã†',	'ãˆãŠ'	,	NULL);
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('abc'	,	'def'	,	NULL);
-INSERT INTO SampleStr (str1, str2, str3) VALUES ('R“c'	,	'‘¾˜Y'  ,	'‚Å‚·');
+INSERT INTO SampleStr (str1, str2, str3) VALUES ('å±±ç”°'	,	'å¤ªéƒ'  ,	'ã§ã™');
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('aaa'	,	NULL    ,	NULL);
-INSERT INTO SampleStr (str1, str2, str3) VALUES (NULL	,	'‚ ‚ ‚ ',	NULL);
+INSERT INTO SampleStr (str1, str2, str3) VALUES (NULL	,	'ã‚ã‚ã‚',	NULL);
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('@!#$%',	NULL	,	NULL);
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('ABC'	,	NULL	,	NULL);
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('aBC'	,	NULL	,	NULL);
-INSERT INTO SampleStr (str1, str2, str3) VALUES ('abc‘¾˜Y',	'abc'	,	'ABC');
+INSERT INTO SampleStr (str1, str2, str3) VALUES ('abcå¤ªéƒ',	'abc'	,	'ABC');
 INSERT INTO SampleStr (str1, str2, str3) VALUES ('abcdefabc','abc'	,	'ABC');
-INSERT INTO SampleStr (str1, str2, str3) VALUES ('ƒ~ƒbƒNƒ}ƒbƒN',	'ƒb', '‚Á');
+INSERT INTO SampleStr (str1, str2, str3) VALUES ('ãƒŸãƒƒã‚¯ãƒãƒƒã‚¯',	'ãƒƒ', 'ã¤');
 
 COMMIT;
 
 
---ƒe[ƒuƒ‹‚Ì“à—eŠm”F
+--ï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ì“ï¿½ï¿½eï¿½mï¿½F
 SELECT * FROM SampleStr;
+
+
+/*
+postgres=# SELECT * FROM SampleStr;
+     str1     |  str2  | str3 
+--------------+--------+------
+ ã‚ã„ã†       | ãˆãŠ   | 
+ abc          | def    | 
+ å±±ç”°         | å¤ªéƒ   | ã§ã™
+ aaa          |        | 
+              | ã‚ã‚ã‚ | 
+ @!#$%        |        | 
+ ABC          |        | 
+ aBC          |        | 
+ abcå¤ªéƒ      | abc    | ABC
+ abcdefabc    | abc    | ABC
+ ãƒŸãƒƒã‚¯ãƒãƒƒã‚¯ | ãƒƒ     | ã¤
+(11 rows)
