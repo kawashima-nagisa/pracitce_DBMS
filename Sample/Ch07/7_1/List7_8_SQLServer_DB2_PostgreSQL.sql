@@ -1,8 +1,16 @@
---SQL ServerADB2APostgreSQL
---Shohin2‚ÌƒŒƒR[ƒh‚©‚çShohin‚ÌƒŒƒR[ƒh‚ðˆø‚­
+--SQL Serverï¿½ADB2ï¿½APostgreSQL
+--Shohin2ï¿½Ìƒï¿½ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½Shohinï¿½Ìƒï¿½ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 SELECT shohin_id, shohin_mei
   FROM Shohin2
 EXCEPT
 SELECT shohin_id, shohin_mei
   FROM Shohin
 ORDER BY shohin_id;
+
+
+
+ shohin_id | shohin_mei 
+-----------+------------
+ 0009      | æ‰‹è¢‹
+ 0010      | ã‚„ã‹ã‚“
+(2 rows)
