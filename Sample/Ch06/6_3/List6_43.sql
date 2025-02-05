@@ -68,3 +68,13 @@ FROM Shohin;
  count_ihuku | count_kitchen | count_jimu 
 -------------+---------------+------------
            2 |             4 |          2
+
+
+select sum(case when hanbai_tanka <= 1000 then 1 else 0 end) as  low_price,
+       sum(case when hanbai_tanka BETWEEN 1001 and 3000 then 1 else 0 end) as  mid_price,
+       sum(case when hanbai_tanka >= 3001 then 1 else 0 end) as high_price 
+  from shohin;
+ count_1000 | count_2000 | count_3000 | count_4000
+  low_price | mid_price | high_price 
+-----------+-----------+------------
+         5 |         1 |          2
