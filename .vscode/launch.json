@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DBConnect3",
+            "request": "launch",
+            "mainClass": "DBConnect3",
+            "projectName": "practice_DBMS_76bcb05b"
+        },
+        {
+            "type": "java",
+            "name": "DBConnect1",
+            "request": "launch",
+            "mainClass": "DBConnect1",
+            "projectName": "practice_DBMS_76bcb05b"
+        },
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Launch DBConnect1",
+            "mainClass": "DBConnect1",
+            "projectName": "practice_DBMS",
+            "vmArgs": "-cp .:/Users/kawashimanagisa/Downloads/postgresql-42.7.5.jar"
+        }
+    ]
+}

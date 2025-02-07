@@ -1,11 +1,11 @@
-/* List9-5 Shohinƒe[ƒuƒ‹‚ğì¬‚·‚éSQL */
---ƒf[ƒ^ƒx[ƒXshop‚Ìì¬
+/* List9-5 Shohinï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½ï¿½ï¿½ì¬ï¿½ï¿½ï¿½ï¿½SQL */
+--ï¿½fï¿½[ï¿½^ï¿½xï¿½[ï¿½Xshopï¿½Ìì¬
 CREATE DATABASE shop;
 
---‚¢‚Á‚½‚ñu\qv‚Åpsql‚ğƒƒOƒAƒEƒg‚µAÄ“xƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚©‚çshopƒf[ƒ^ƒx[ƒX‚ÖÚ‘±Bpostgres‚ÌƒpƒXƒ[ƒh‚ÍƒCƒ“ƒXƒg[ƒ‹‚Éw’è‚µ‚½‚à‚Ì
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½u\qï¿½vï¿½ï¿½psqlï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½Aï¿½Ä“xï¿½Rï¿½}ï¿½ï¿½ï¿½hï¿½vï¿½ï¿½ï¿½ï¿½ï¿½vï¿½gï¿½ï¿½ï¿½ï¿½shopï¿½fï¿½[ï¿½^ï¿½xï¿½[ï¿½Xï¿½ÖÚ‘ï¿½ï¿½Bpostgresï¿½Ìƒpï¿½Xï¿½ï¿½ï¿½[ï¿½hï¿½ÍƒCï¿½ï¿½ï¿½Xï¿½gï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Éwï¿½è‚µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 C:\PostgreSQL\9.5\bin\psql.exe -U postgres -d shop
 
---Shohinƒe[ƒuƒ‹‚Ìì¬
+--Shohinï¿½eï¿½[ï¿½uï¿½ï¿½ï¿½Ìì¬
 CREATE TABLE Shohin
 (shohin_id CHAR(4) NOT NULL,
  shohin_mei VARCHAR(100) NOT NULL,
@@ -15,14 +15,39 @@ CREATE TABLE Shohin
  torokubi DATE ,
      PRIMARY KEY (shohin_id));
 
---¤•iƒf[ƒ^‚Ì“o˜^
+--ï¿½ï¿½ï¿½iï¿½fï¿½[ï¿½^ï¿½Ì“oï¿½^
 BEGIN TRANSACTION;
-INSERT INTO Shohin VALUES ('0001', 'TƒVƒƒƒc', 'ˆß•', 1000, 500, '2009-09-20');
-INSERT INTO Shohin VALUES ('0002', 'ŒŠ‚ ‚¯ƒpƒ“ƒ`', '––±—p•i', 500, 320, '2009-09-11');
-INSERT INTO Shohin VALUES ('0003', 'ƒJƒbƒ^[ƒVƒƒƒc', 'ˆß•', 4000, 2800, NULL);
-INSERT INTO Shohin VALUES ('0004', '•ï’š', 'ƒLƒbƒ`ƒ“—p•i', 3000, 2800, '2009-09-20');
-INSERT INTO Shohin VALUES ('0005', 'ˆ³—Í“ç', 'ƒLƒbƒ`ƒ“—p•i', 6800, 5000, '2009-01-15');
-INSERT INTO Shohin VALUES ('0006', 'ƒtƒH[ƒN', 'ƒLƒbƒ`ƒ“—p•i', 500, NULL, '2009-09-20');
-INSERT INTO Shohin VALUES ('0007', '‚¨‚ë‚µ‚ª‚Ë', 'ƒLƒbƒ`ƒ“—p•i', 880, 790, '2008-04-28');
-INSERT INTO Shohin VALUES ('0008', 'ƒ{[ƒ‹ƒyƒ“', '––±—p•i', 100, NULL, '2009-11-11');
+INSERT INTO Shohin VALUES ('0001', 'Tã‚·ãƒ£ãƒ„', 'è¡£æœ', 1000, 500, '2009-09-20');
+INSERT INTO Shohin VALUES ('0002', 'ç©´ã‚ã‘ãƒ‘ãƒ³ãƒ`', 'äº‹å‹™ç”¨å“', 500, 320, '2009-09-11');
+INSERT INTO Shohin VALUES ('0003', 'ã‚«ãƒƒã‚¿ãƒ¼ã‚·ãƒ£ãƒ„', 'è¡£æœ', 4000, 2800, NULL);
+INSERT INTO Shohin VALUES ('0004', 'åŒ…ä¸', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 3000, 2800, '2009-09-20');
+INSERT INTO Shohin VALUES ('0005', 'åœ§åŠ›é‹', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 6800, 5000, '2009-01-15');
+INSERT INTO Shohin VALUES ('0006', 'ãƒ•ã‚©ãƒ¼ã‚¯', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 500, NULL, '2009-09-20');
+INSERT INTO Shohin VALUES ('0007', 'ãŠã‚ã—ãŒã­', 'ã‚­ãƒƒãƒãƒ³ç”¨å“', 880, 790, '2008-04-28');
+INSERT INTO Shohin VALUES ('0008', 'ãƒœãƒ¼ãƒ«ãƒšãƒ³', 'äº‹å‹™ç”¨å“', 100, NULL, '2009-11-11');
 COMMIT;
+
+
+/*
+psql -U kawashimanagisa -d postgres -c "\dt"	postgres ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã®ãƒ†ãƒ¼ãƒ–ãƒ«ä¸€è¦§
+psql -U kawashimanagisa -d shop -c "\dt"	shop ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã®ãƒ†ãƒ¼ãƒ–ãƒ«ä¸€è¦§ï¼ˆä»Šã¯ç©ºï¼‰
+CREATE TABLE shohin (...);	shop ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã« shohin ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’ä½œæˆ
+psql -U kawashimanagisa -d shop -c "\dt"	shohin ãƒ†ãƒ¼ãƒ–ãƒ«ãŒä½œæˆã•ã‚ŒãŸã‹ç¢ºèª
+
+
+Java ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
+ğŸ“Œ ä»¥ä¸‹ã®ã‚³ãƒãƒ³ãƒ‰ã§ .class ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆ
+
+
+javac -cp ".:postgresql-42.7.5.jar" DBConnect2.java
+java -cp ".:/Users/kawashimanagisa/Downloads/postgresql-42.7.5.jar" DBConnect2
+
+ãƒ‘ã‚¹ã‚’ã¨ãŠã™
+echo 'export CLASSPATH=$CLASSPATH:/Users/kawashimanagisa/Downloads/postgresql-42.7.5.jar' >> ~/.zshrc
+source ~/.zshrc
+
+
+cd ~/Desktop/practice_DBMS
+javac DBConnect2.java
+ğŸ“Œ å†åº¦ Java ã‚’å®Ÿè¡Œ
+java DBConnect2
