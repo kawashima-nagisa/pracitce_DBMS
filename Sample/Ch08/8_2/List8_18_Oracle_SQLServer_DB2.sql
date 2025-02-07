@@ -30,3 +30,24 @@ SELECT CASE WHEN GROUPING(shohin_bunrui) = 1
 商品分類ごとの合計（キッチン用品、衣服、事務用品 の合計）を取得！
 登録日ごとの合計（各 torokubi ごとの合計）を取得！
 通常のデータ（個別の商品単位のデータ）は取得されない！
+
+
+-- */
+
+select shohin_id, shohin_mei, hanbai_tanka, 
+max(hanbai_tanka) OVER(ORDER BY shohin_id) as current_max_tanaka
+from shohin;
+
+
+
+ shohin_id |   shohin_mei   | hanbai_tanka | current_max_tanaka 
+-----------+----------------+--------------+--------------------
+ 0001      | Tシャツ        |         1000 |               1000
+ 0002      | 穴あけパンチ   |          500 |               1000
+ 0003      | カッターシャツ |         4000 |               4000
+ 0004      | 包丁           |         3000 |               4000
+ 0005      | 圧力鍋         |         6800 |               6800
+ 0006      | フォーク       |          500 |               6800
+ 0007      | おろしがね     |          880 |               6800
+ 0008      | ボールペン     |          100 |               6800
+(8 rows)
